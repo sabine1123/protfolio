@@ -23,6 +23,10 @@
             justify-content: space-between
             padding: 20px
             margin: 0 auto
+            .logo
+                font-size: 28px
+                font-family: 'Lato', sans-serif
+                font-weight: 600
             nav
                 color: #ff1654
                 font-size: 17px

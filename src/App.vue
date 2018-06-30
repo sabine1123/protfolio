@@ -1,6 +1,10 @@
 <template>
   <div id="app">
     <v-header></v-header>
+    <div class="container">
+      <v-plugins></v-plugins>
+    </div>
+    
     <!-- <img src="./assets/logo.png">
     <router-view/> -->
   </div>
@@ -8,10 +12,12 @@
 
 <script>
 import header from './components/header.vue'
+import plugins from './components/plugins.vue'
 export default {
   name: 'App',
   components: {
-    'v-header': header
+    'v-header': header,
+    'v-plugins': plugins
   }
 }
 </script>
