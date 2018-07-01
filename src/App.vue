@@ -35,6 +35,7 @@ export default {
   .container
     max-width: 1200px
     margin: 0 auto
+    padding: 0 30px
 // #app {
 //   font-family: 'Avenir', Helvetica, Arial, sans-serif;
 //   -webkit-font-smoothing: antialiased;
