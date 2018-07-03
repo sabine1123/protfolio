@@ -1,19 +1,18 @@
 <template>
     <div class="box-wrap">
         <div class="box">
-            <h1 class="title">1.
-                <a href="https://sabine1123.github.io/module-calendar/preview.html">
-                    <span>Calendar</span>
-                </a>
-            </h1>
-            <div class="content">
+            <h2 class="title" data-toggle="collapse" href="#calendar">
+                <span>+ Calendar</span>
+                <a href="https://sabine1123.github.io/module-calendar/preview.html" class="demo">Demo</a>
+            </h2>
+            <div class="content panel-collapse collapse in" id="calendar">
                 <div class="pic">
                     <a href="https://sabine1123.github.io/module-calendar/preview.html">
                         <img class="c-pic" src="../assets/calendar.png" alt="demo web">
                         <img class="c-pic" src="../assets/calendar2.png" alt="demo web">
                     </a>
                 </div>
-                <div class="text" id="calendar">
+                <div class="text">
                     <h2>Usage</h2>
                     <table>
                         <thead>
@@ -101,12 +100,11 @@
             </div>
         </div>
         <div class="box">
-            <h1 class="title">2.
-                <a href="https://sabine1123.github.io/module-flighttable/preview.html">
-                    <span>Flight table</span>
-                </a>
-            </h1>
-            <div class="content">
+            <h2 class="title" data-toggle="collapse" href="#fltable">
+                <span>+ Flight table</span>
+                <a href="https://sabine1123.github.io/module-flighttable/preview.html" class="demo">Demo</a>
+            </h2>
+            <div class="content panel-collapse collapse" id="fltable">
                 <div class="pic m-t-4">
                     <a href="https://sabine1123.github.io/module-flighttable/preview.html">
                         <img class="f-pic" src="../assets/frtable.png" alt="demo web">
@@ -156,7 +154,8 @@
         </div>
         <div class="box">
             <h2 class="title" data-toggle="collapse" href="#banner">
-                + Toggle banner
+                <span>+ Toggle banner</span>
+                <a href="https://sabine1123.github.io/module-banner/" class="demo">Demo</a>
             </h2>
             <div class="content panel-collapse collapse" id="banner">
                 <div class="pic m-t-4">
@@ -166,33 +165,6 @@
                 </div>
                 <div class="text">
                     <h3>Usage</h3>
-                    <!-- <div class="usage">
-                        <div class="subtitle">
-                            HTML
-                        </div>
-                        <textarea>
-                            <div class="banner">
-                                <a class="wrap" href="#">
-                                    <img class="img" src="./imgs/1200x380.png" title="" alt="">
-                                </a>
-                            </div>
-                        </textarea>
-                        <div class="subtitle">
-                            Javascript
-                        </div>
-                        <textarea>
-                            $('.banner').banner({
-                                openAtStart: true,
-                                button: {
-                                    closeText: 'close', 
-                                    openText: 'open', 
-                                    class: 'btn' 
-                                },
-                                transition: true,
-                                autoToggle: true
-                            });
-                        </textarea>
-                    </div> -->
                     <table>
                         <thead>
                             <tr>
@@ -242,32 +214,17 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-            <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                    <h4 class="panel-title">
-                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Collapsible Group Item #1
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                    <div class="panel-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                    </div>
-                </div>
-            </div>
-        </div> -->
     </div> <!-- wrap -->
 </template>
 
 <style lang="sass" scoped>
 @import "./src/sass/common.sass"
 .box-wrap
+    padding-bottom: 50px
     // max-width: 80%
 .box 
     margin-top: 50px
-    padding-bottom: 50px
+    // padding-bottom: 50px
 
 
 
@@ -275,8 +232,11 @@
     margin-bottom: 0
     font-weight: 400
     color: $mainR
-    cursor: pointer
-    // span
+    span
+        cursor: pointer
+    .demo
+        font-size: 16px
+        margin-left: 20px
         
 .content
     // display: flex
