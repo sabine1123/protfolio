@@ -3,11 +3,11 @@
         <div class="box">
             <h2 class="title" data-toggle="collapse" href="#calendar">
                 <span>+ Calendar</span>
-                <a href="https://sabine1123.github.io/module-calendar/preview.html" class="demo">Demo</a>
+                <a href="https://sabine1123.github.io/module-calendar/preview.html" target="_blank" class="demo">Demo</a>
             </h2>
             <div class="content panel-collapse collapse in" id="calendar">
                 <div class="pic">
-                    <a href="https://sabine1123.github.io/module-calendar/preview.html">
+                    <a href="https://sabine1123.github.io/module-calendar/preview.html" target="_blank">
                         <img class="c-pic" src="../assets/calendar.png" alt="demo web">
                         <img class="c-pic" src="../assets/calendar2.png" alt="demo web">
                     </a>
@@ -102,11 +102,11 @@
         <div class="box">
             <h2 class="title" data-toggle="collapse" href="#fltable">
                 <span>+ Flight table</span>
-                <a href="https://sabine1123.github.io/module-flighttable/preview.html" class="demo">Demo</a>
+                <a href="https://sabine1123.github.io/module-flighttable/preview.html" target="_blank" class="demo">Demo</a>
             </h2>
             <div class="content panel-collapse collapse" id="fltable">
                 <div class="pic m-t-4">
-                    <a href="https://sabine1123.github.io/module-flighttable/preview.html">
+                    <a href="https://sabine1123.github.io/module-flighttable/preview.html" target="_blank">
                         <img class="f-pic" src="../assets/frtable.png" alt="demo web">
                         <img class="f-pic" src="../assets/frtable2.png" alt="demo web">
                     </a>
@@ -155,11 +155,11 @@
         <div class="box">
             <h2 class="title" data-toggle="collapse" href="#banner">
                 <span>+ Toggle banner</span>
-                <a href="https://sabine1123.github.io/module-banner/" class="demo">Demo</a>
+                <a href="https://sabine1123.github.io/module-banner/" target="_blank" class="demo">Demo</a>
             </h2>
             <div class="content panel-collapse collapse" id="banner">
                 <div class="pic m-t-4">
-                    <a href="https://sabine1123.github.io/module-banner/">
+                    <a href="https://sabine1123.github.io/module-banner/" target="_blank">
                         <img src="../assets/banner.png" alt="demo web">
                     </a>
                 </div>
@@ -221,11 +221,9 @@
 @import "./src/sass/common.sass"
 .box-wrap
     padding-bottom: 50px
-    // max-width: 80%
 .box 
     margin-top: 50px
     // padding-bottom: 50px
-
 
 
 .title
@@ -239,79 +237,66 @@
         margin-left: 20px
         
 .content
-    // display: flex
+    .pic
+        a
+            display: flex
+            align-items: flex-start
+            img
+                max-width: 100%
+            .c-pic
+                width: 49%
+                &:first-child
+                    margin-right: 2%
+            .f-pic
+                &:first-child
+                    width: 60%                
+                &:last-child
+                    width: 40%
+                    margin-top: 5px
 
-// .pic
-//     max-width: 35%
-//     margin-right: 100px
-//     margin-top: 30px
-//     img
-//         width: 100%
-//         margin-bottom: 20px
-.pic
-    // max-width: 80%
-    // background: #fcc
-    a
-        display: flex
-        align-items: flex-start
-        img
-            max-width: 100%
-        .c-pic
-            width: 49%
-            &:first-child
-                margin-right: 2%
-        .f-pic
-            &:first-child
-                width: 60%                
-            &:last-child
-                width: 40%
-                margin-top: 5px
-
-.text
-    // max-width: 65%
-    line-height: 1.5
-    h2
-        margin-bottom: 20px
-    table
-        border-collapse: collapse
-        // max-width: 530px
-        width: 100%
-    thead
-        font-weight: 600
-        tr
-            td
-                padding-bottom: 10px
-    tbody
-        font-size: 14px
-        tr:nth-child(odd)
-            background-color: $secG
-        td
-            padding: 10px
-            border: 1px solid #e0e0e0
-        td:first-child
-            font-weight: 600
-        
-        .code
-            color: #999
-            font-style: italic
-            li
-                padding-left: 15px
-                &:first-child, &:last-child
-                    padding-left: 0
-    .subtitle
-        font-weight: 600
-        margin-bottom: 10px
-    textarea
-        width: 100%
-        min-height: 150px
-        appearance: none
-        border: none
-        outline: none
-        overflow: hidden
-        color: $mainG
+    .text
         line-height: 1.5
-        background-color: $secG
-        padding: 10px
+        h2
+            margin-bottom: 20px
+        table
+            border-collapse: collapse
+            width: 100%
+        thead
+            font-weight: 600
+            tr
+                td
+                    padding-bottom: 10px
+        tbody
+            font-size: 14px
+            tr:nth-child(odd)
+                background-color: $secG
+            td
+                padding: 10px
+                border: 1px solid #e0e0e0
+            td:first-child
+                font-weight: 600
+            
+            .code
+                color: #999
+                font-style: italic
+                li
+                    padding-left: 15px
+                    &:first-child, &:last-child
+                        padding-left: 0
+        .subtitle
+            font-weight: 600
+            margin-bottom: 10px
+        textarea
+            width: 100%
+            min-height: 150px
+            appearance: none
+            border: none
+            outline: none
+            overflow: hidden
+            color: $mainG
+            line-height: 1.5
+            background-color: $secG
+            padding: 10px
     
             
 
@@ -325,29 +310,11 @@
 // import 'vue-easytable/libs/themes-base/index.css'
 // Vue.component(VTable.name, VTable)
 
-// export default{
-//     data() {
-//         return {
-//             tableData: [
-//                 {'name':'dataSource','type':'array | string','description': 'Data path or array like ["guaranteed": true,"date": "2018/06/15"],"price": "1000","availableVancancy": 0,"totalVacnacy": 20,"status": "報名"'},
-//                 {'name':'initYearMonth','type':'string','description':'Setting initial year and month.'},
-//                 {'name':'dataKeySetting','type':'object','description':'Change the data key,like guaranteed、status、available and total'},
-//                 {'name':'onClickPrev','type':'function','description':'onClickPrev: function( $btn, data, module )'},
-//                 {'name':'onClickNext','type':'function','description':'onClickNext: function( $btn, data, module )'},
-//                 {'name':'onClickDate','type':'function','description':'onClickDate: function( $btn, data, module )'},
-//                 {'name':'switch','type':'methode','description':'Change the initial UI mode'},
-//                 {'name':'inputData','type':'methode','description':'User can add data by this metheod.'},
-//                 {'name':'destroy','type':'methode','description':'Destroy this plugin.'},
-
-//                 ],
-//             columns: [
-//                 {field: 'name', title: 'Name', width: 10, titleAlign: 'left', columnAlign: 'left',isResize:true},
-//                 {field: 'type', title: 'Type', width: 10, titleAlign: 'left', columnAlign: 'left',isResize:true},
-//                 {field: 'description', title: 'Description', width: 350, titleAlign: 'left', columnAlign: 'left',isResize:true},
-                
-//             ]
-//         }
-//     },
+export default{
+    data() {
+        return {
+        }
+    }
 //     methods: {
 //         columnCellClass(rowIndex,columnName,rowData){
 //             if (rowIndex ===1){
@@ -357,5 +324,5 @@
 //         }
        
 //     }
-// }
+}
 </script>

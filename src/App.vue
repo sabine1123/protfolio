@@ -2,17 +2,18 @@
   <div id="app">
     <v-header></v-header>
     <div class="container">
-      <v-plugins></v-plugins>
+      <!-- <v-plugins></v-plugins> -->
+        <!-- <img src="./assets/logo.png"> -->
+        <router-view/>
     </div>
     
-    <!-- <img src="./assets/logo.png">
-    <router-view/> -->
+
   </div>
 </template>
 
 <script>
 import header from './components/header.vue'
-import plugins from './components/plugins.vue'
+import plugins from './pages/plugins.vue'
 export default {
   name: 'App',
   components: {

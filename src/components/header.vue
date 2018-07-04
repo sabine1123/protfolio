@@ -4,9 +4,9 @@
             <div class="logo">Logo</div>
             <nav>
                 <ul>
-                    <li>About Me</li>
-                    <li>Webs</li>
-                    <li>Plugins</li>                    
+                    <li @click="changView('about')">About Me</li>
+                    <li @click="changView('web')">Webs</li>
+                    <li @click="changView('plugins')"><router-link to="/plugins">Plugins</router-link></li>                    
                 </ul>
             </nav>
         </div>
@@ -40,4 +40,16 @@ header
                     &:hover
                         text-decoration: underline
 </style>
-
+<script>
+export default{
+    data() {
+        return {
+        }
+    },
+    methods: {
+       changView(val){
+           console.log(val)
+       }
+    }
+}
+</script>
