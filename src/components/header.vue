@@ -4,7 +4,7 @@
             <div class="logo">Logo</div>
             <nav>
                 <ul>
-                    <li @click="changView('about')">About Me</li>
+                    <!-- <li @click="changView('about')">About Me</li> -->
                     <li @click="changView('web')">Webs</li>
                     <li @click="changView('plugins')"><router-link to="/plugins">Plugins</router-link></li>                    
                 </ul>

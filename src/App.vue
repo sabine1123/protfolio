@@ -4,7 +4,8 @@
     <div class="container">
       <!-- <v-plugins></v-plugins> -->
         <!-- <img src="./assets/logo.png"> -->
-        <router-view/>
+        <!-- <router-view/> -->
+        <v-webs></v-webs>
     </div>
     
 
@@ -13,12 +14,15 @@
 
 <script>
 import header from './components/header.vue'
-import plugins from './pages/plugins.vue'
+// import plugins from './pages/plugins.vue'
+import webs from './pages/webs.vue'
+
 export default {
   name: 'App',
   components: {
     'v-header': header,
-    'v-plugins': plugins
+    'v-webs': webs
+    // 'v-plugins': plugins
   }
 }
 </script>
