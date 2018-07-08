@@ -39,6 +39,8 @@ header
                     cursor: pointer
                     &:hover
                         text-decoration: underline
+                    a
+                        color: inherit
 </style>
 <script>
 export default{

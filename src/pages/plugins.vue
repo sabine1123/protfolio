@@ -241,6 +241,7 @@
         a
             display: flex
             align-items: flex-start
+            color: $sp
             img
                 max-width: 100%
             .c-pic
