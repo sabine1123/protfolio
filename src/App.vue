@@ -5,7 +5,8 @@
       <!-- <v-plugins></v-plugins> -->
         <!-- <img src="./assets/logo.png"> -->
         <!-- <router-view/> -->
-        <v-webs></v-webs>
+        <!-- <v-webs></v-webs> -->
+        <v-others></v-others>
     </div>
     
 
@@ -15,14 +16,17 @@
 <script>
 import header from './components/header.vue'
 // import plugins from './pages/plugins.vue'
-import webs from './pages/webs.vue'
+// import webs from './pages/webs.vue'
+import others from './pages/others.vue'
 
 export default {
   name: 'App',
   components: {
     'v-header': header,
-    'v-webs': webs
-    // 'v-plugins': plugins
+    
+    // 'v-plugins': plugins,
+    // 'v-webs': webs,
+    'v-others': others,
   }
 }
 </script>
@@ -39,7 +43,7 @@ export default {
       list-style: none
   .container
     max-width: 1200px
-    margin: 0 auto
+    margin: 50px auto 100px
     padding: 0 percentage(60px/1200px)
 // #app {
 //   font-family: 'Avenir', Helvetica, Arial, sans-serif;

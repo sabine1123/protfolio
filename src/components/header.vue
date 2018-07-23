@@ -6,7 +6,8 @@
                 <ul>
                     <!-- <li @click="changView('about')">About Me</li> -->
                     <li @click="changView('web')">Webs</li>
-                    <li @click="changView('plugins')"><router-link to="/plugins">Plugins</router-link></li>                    
+                    <li @click="changView('plugins')"><router-link to="/plugins">Plugins</router-link></li>
+                    <li @click="changView('plugins')"><router-link to="/plugins">Others</router-link></li>                    
                 </ul>
             </nav>
         </div>
@@ -17,11 +18,12 @@
 @import "./src/sass/common.sass"
 header
     background-color: $secG
-    
+    border-bottom: 1px solid rgba($mainG,.2)
     .header_inner
         max-width: 1200px
         display: flex
         justify-content: space-between
+        align-items: center
         padding: 20px
         margin: 0 auto
         .logo

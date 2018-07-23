@@ -2,60 +2,105 @@
     <div class="row webs">
         <div class="col-md-4">
             <div class="box">
-                <div class="title">RWD Web</div>
-                <a href="">
-                    <img src="../assets/web1.png" alt="">
-                </a>
-                
-                <div class="text">
-                    <ul>
-                        <li>#RWD</li>
-                        <li>#jQuery</li>
-                        <li>#Sass</li>
-                        <li>#Ajax</li>
-                    </ul>
+                <div class="title">
+                    <h4>RWD Web</h4>
                 </div>
-            </div>
-            
+                <a href="" target="_blank">
+                    <img src="../assets/web1.png" alt="" class="">
+                </a>
+                <div class="des">
+                    <span># Ajax</span>
+                    <span># Sass</span>
+                    <span># jQuery</span>                    
+                </div>
+            </div>            
         </div>
         <div class="col-md-4">
             <div class="box">
-                <img src="../assets/web2.png" alt="">
+                <div class="title">
+                    <h4>PC Web</h4>
+                </div>
+                <a href="" target="_blank">
+                    <img src="../assets/web2.png" alt="" class="">
+                </a>
+                <div class="des">
+                    <span># Bootstrap</span>
+                    <span># Pug</span>
+                    <span># Sass</span>
+                    <span># jQuery</span>                    
+                </div>
+            </div>            
+        </div>
+        <div class="col-md-4">
+            <div class="box">
+                <div class="title">
+                    <h4>Mobile Web</h4>
+                </div>
+                <a href="" target="_blank">
+                    <img src="../assets/web3.png" alt="" class="">
+                </a>
+                <div class="des">
+                    <span># Bootstrap</span>
+                    <span># Sass</span>
+                    <span># jQuery</span>                    
+                </div>
+            </div>            
+        </div>
+
+        <div class="col-md-12">
+            <div class="box">
+                <h3 class="title">Interactive Effects </h3>            
+            </div>
+        </div>
+
+
+        <div class="col-md-4">
+            <div class="box">
+                <a href="http://www.lovfee.com/?debug=1&todate=20161220" target="_blank">
+                    <img src="../assets/20161220.jpg" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="box">
+                <a href="http://www.lovfee.com/?debug=1&todate=20161111" target="_blank">
+                    <img src="../assets/20161111(p).jpg" alt="">
+                </a>
+            </div>
+        </div>						 
+
+
+
+        <div class="col-md-4">
+            <div class="box">
+                <a href="http://www.lovfee.com/?debug=1&todate=20170102" target="_blank">
+                    <img src="../assets/20170102.jpg" alt="">
+                </a>
             </div>
         </div>
         <div class="col-md-4">
             <div class="box">
-                <img src="../assets/web3.png" alt="">
+                <a href="http://www.lovfee.com/?debug=1&todate=20170105" target="_blank">
+                    <img src="../assets/20170103.jpg" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="box">
+                <a href="http://www.lovfee.com/?debug=1&todate=20161103" target="_blank">
+                    <img src="../assets/20161103.jpg" alt="">
+                </a>
             </div>
         </div>
     </div>
 </template>
 
 <style lang="sass" scoped>
-    @import "./src/sass/common.sass"
-    img
-        width: 100%
-    .webs
-        // .box
-        //     padding: 20px 20px 20px
-        //     // background-color: rgba($mainR, 0.1)
-        //     border: 1px solid rgba($mainR, 0.3)
-        //     border-radius: 3px
-        a
-            img
-                transition: all .3s
-        a:hover
-            img
-                opacity: 0.8
-                transform: scale(1.02)
-            
-        .title
-            font-size: 17px
-            margin-bottom: 10px
-        .text
-            margin-top: 10px
-            ul
-                display: flex
-                li
-                    margin-left: 5px
+@import "./src/sass/common.sass"
+
+.box
+    @include box
+    
 </style>

@@ -8,3 +8,18 @@ a
     margin-bottom: $base*4
 .m-t-4
     margin-top: $base*4
+
+@mixin box
+    margin-bottom: 30px
+    img
+        width: 100%
+        transition: all .3s
+        &:hover
+            opacity: .8
+            transform: scale(1.01)
+    .title
+        color: $mainR
+    .des
+        margin-top: 5px
+        >span
+            margin-right: 10px    
