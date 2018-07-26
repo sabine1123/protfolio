@@ -5,9 +5,20 @@
             <nav>
                 <ul>
                     <!-- <li @click="changView('about')">About Me</li> -->
-                    <li @click="changView('web')">Webs</li>
-                    <li @click="changView('plugins')"><router-link to="/plugins">Plugins</router-link></li>
-                    <li @click="changView('plugins')"><router-link to="/plugins">Others</router-link></li>                    
+                    <li @click="changView('plugins')">
+                        <router-link v-bind:to="{ name: 'plugins'}">
+                            Plugins
+                        </router-link>
+                    </li>
+                    <li @click="changView('web')">
+                        <router-link v-bind:to="{ name: 'webs'}">Webs</router-link>
+                    </li>
+
+                    <li @click="changView('others')">
+                        <router-link v-bind:to="{ name: 'others'}">
+                            Others
+                        </router-link>
+                    </li>                    
                 </ul>
             </nav>
         </div>

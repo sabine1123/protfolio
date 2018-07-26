@@ -7,7 +7,8 @@ import $ from 'jquery'
 import 'bootstrap/dist/js/bootstrap.min.js'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import plugins from './pages/plugins.vue'
-
+import webs from './pages/webs.vue'
+import others from './pages/others.vue'
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

@@ -72,6 +72,6 @@
 .box
     @include box
     img
-        box-shadow: 0 0 0 1px $mainG
+        box-shadow: 0 0 0 1px #aaa
 
 </style>
