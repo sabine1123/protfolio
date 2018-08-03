@@ -2,8 +2,13 @@
 
 a
     text-decoration: none
+    color: inherit
     
-
+ul
+    margin: 0
+    padding: 0
+    li
+        list-style: none
 .m-b-4
     margin-bottom: $base*4
 .m-t-4
@@ -30,3 +35,9 @@ a
     right: 0
     bottom: 0
     margin: auto
+
+@mixin pc() 
+    @media all and (min-width: $pc-media) 
+        @content
+         
+    

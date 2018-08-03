@@ -3,29 +3,14 @@
     <v-header></v-header>
     <div class="container">
         <router-view/>
-        <div id="about" @click="toggle">About Me</div>
+        <div id="about" @click="toggle"><i class="glyphicon glyphicon-option-horizontal"></i>About Me</div>
         <transition name="fade">
           <div class="lightbox" v-show="isShow">
             <div class="wrap">
               <div class="btn_close" @click="toggle"></div>
               <h4 class="title"> {{lb_title}} </h4>
               <div class="content">
-                  <div>Sabine</div>
-                  <div>
-                    <ul>
-                      <li>
-                        <span>F2E</span>
-                      </li>
-                      <li>
-                        <span>Css. Sass. Bootstrap. Jquery. Pug. RWD. Ajax. Git</span>
-                      </li>
-                      <li>
-                        <span>Steadiness. Compliance</span>
-                      </li>
-                    </ul>                               
-                  </div>
-                
-
+                <v-about></v-about>
               </div>
 
             </div>
@@ -40,16 +25,18 @@
 
 <script>
 import header from "./components/header.vue";
+import about from "./lightbox/about.vue";
 
 export default {
   name: "App",
   components: {
-    "v-header": header
+    "v-header": header,
+    "v-about": about
   },
   data() {
     return {
       // msg: 'Hello world!',
-      isShow: true,
+      isShow: false,
       lb_title: "About me"
     };
   },
@@ -64,25 +51,23 @@ export default {
 
 <style lang="sass">
 @import "./src/sass/common.sass"
+
 #app
   font-family: 'Muli', sans-serif
   color: #50514f
-  ul
-    margin: 0
-    padding: 0
-    li
-      list-style: none
   .container
     max-width: 1200px
     margin: 50px auto 100px
     padding: 0 percentage(60px/1200px)
   #about
     position: fixed
-    bottom: 30px
+    bottom: 150px
     right: 20px
     font-size: 18px
     cursor: pointer
-    writing-mode: vertical-lr 
+    writing-mode: vertical-lr
+    i 
+      margin-bottom: 5px 
   
   .lightbox
     @include box-center
@@ -93,34 +78,18 @@ export default {
 
     .wrap
       @include box-center
-      width: 60%
+      width: 95%
       max-width: 650px
-      height: 65%
       background-color: #fff
       border: 2px solid #000
       position: absolute
       padding: 10px 30px 20px
       letter-spacing: 1.1px
+      @include pc()
+        height: 65%
       .title
         font-weight: bold
         color: $mG
-      .content
-        margin-top: 20px
-        display: flex
-        >div
-          &:first-child
-            width: 25%
-            font-weight: 500
-            font-size: 16px
-            text-align: center
-          ul
-            li
-              margin-bottom: 10px
-              span
-                padding-bottom: 2px
-                border-bottom: 1px solid $mainG
-          
-
 
 .fade-enter-active, 
 .fade-leave-active 
@@ -137,7 +106,6 @@ export default {
   right: 5px
   top: 5px
   cursor: pointer
-
   &:before, &:after
     content: ''
     display: block

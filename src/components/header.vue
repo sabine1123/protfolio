@@ -50,6 +50,7 @@ header
                     padding-left: 20px
                     padding-right: 20px
                     cursor: pointer
+                    list-style: none
                     &:hover
                         text-decoration: underline
                     a
