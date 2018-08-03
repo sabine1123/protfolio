@@ -49,7 +49,6 @@
         &:first-child
             font-size: 16px
             font-weight: 500
-            // color: $mainR
         >li 
             &:first-child
                 width: 25%

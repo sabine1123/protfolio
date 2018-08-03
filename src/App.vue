@@ -3,7 +3,7 @@
     <v-header></v-header>
     <div class="container">
         <router-view/>
-        <div id="about" @click="toggle"><i class="glyphicon glyphicon-option-horizontal"></i>About Me</div>
+        <div id="about" @click="toggle"><i class="fas fa-certificate"></i>About Me</div>
         <transition name="fade">
           <div class="lightbox" v-show="isShow">
             <div class="wrap">
@@ -67,6 +67,8 @@ export default {
     cursor: pointer
     writing-mode: vertical-lr
     i 
+      font-size: 14px
+      color: lighten($sp,5%)
       margin-bottom: 5px 
   
   .lightbox
