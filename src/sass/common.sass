@@ -1,0 +1,43 @@
+@import './src/sass/_variable.sass'
+
+a
+    text-decoration: none
+    color: inherit
+    
+ul
+    margin: 0
+    padding: 0
+    li
+        list-style: none
+.m-b-4
+    margin-bottom: $base*4
+.m-t-4
+    margin-top: $base*4
+
+@mixin box
+    margin-bottom: 30px
+    img
+        width: 100%
+        transition: all .3s
+        &:hover
+            opacity: .8
+            transform: scale(1.01)
+    .title
+        color: $mainR
+    .des
+        margin-top: 5px
+        >span
+            margin-right: 10px    
+
+@mixin box-center
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    margin: auto
+
+@mixin pc() 
+    @media all and (min-width: $pc-media) 
+        @content
+         
+    
