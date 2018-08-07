@@ -1,20 +1,21 @@
 <template>
     <header>
         <div class="header_inner">
-            <div class="logo">Logo</div>
+            <div class="logo">S.C.</div>
             <nav>
                 <ul>
-                    <!-- <li @click="changView('about')">About Me</li> -->
-                    <li @click="changView('plugins')">
+                    <li>
                         <router-link v-bind:to="{ name: 'plugins'}">
                             Plugins
                         </router-link>
                     </li>
-                    <li @click="changView('web')">
-                        <router-link v-bind:to="{ name: 'webs'}">Webs</router-link>
+                    <li>
+                        <router-link v-bind:to="{ name: 'webs'}">
+                            Webs
+                        </router-link>
                     </li>
 
-                    <li @click="changView('others')">
+                    <li>
                         <router-link v-bind:to="{ name: 'others'}">
                             Others
                         </router-link>
@@ -38,9 +39,10 @@ header
         padding: 20px
         margin: 0 auto
         .logo
-            font-size: 28px
-            font-family: 'Lato', sans-serif
-            font-weight: 600
+            font-size: 36px
+            font-family: 'Cookie', cursive
+            // color: #000
+
         nav
             color: #ff1654
             font-size: 17px
@@ -56,16 +58,4 @@ header
                     a
                         color: inherit
 </style>
-<script>
-export default{
-    data() {
-        return {
-        }
-    },
-    methods: {
-       changView(val){
-           console.log(val)
-       }
-    }
-}
-</script>
+

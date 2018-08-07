@@ -45,7 +45,7 @@
     >ul
         display: flex
         flex-wrap: wrap
-        margin-bottom: 20px
+        margin-bottom: 30px
         &:first-child
             font-size: 16px
             font-weight: 500
