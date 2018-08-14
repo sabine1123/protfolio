@@ -1,7 +1,9 @@
 <template>
     <header>
         <div class="header_inner">
-            <div class="logo">S.C.</div>
+            <div class="logo">
+                <router-link v-bind:to="{ name: 'plugins'}">S.C.</router-link>
+            </div>
             <nav>
                 <ul>
                     <li>
@@ -53,7 +55,7 @@ header
                     padding-right: 20px
                     cursor: pointer
                     list-style: none
-                    &:hover
+                    &:hover, &:active, .active
                         text-decoration: underline
                     a
                         color: inherit
