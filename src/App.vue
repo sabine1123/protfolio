@@ -31,11 +31,10 @@ export default {
   name: "App",
   components: {
     "v-header": header,
-    "v-about": about
+    "v-about": about,
   },
   data() {
     return {
-      // msg: 'Hello world!',
       isShow: false,
       lb_title: "About me"
     };

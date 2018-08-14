@@ -7,8 +7,16 @@ import others from '@/pages/others.vue'
 Vue.use(Router)
 
 export default new Router({
-  
+  mode: 'history',
+  linkActiveClass: 'active',
+  base: __dirname,
   routes: [
+    {
+      path: '/',
+      components: {
+        default: plugins,
+      }
+    },
     {
       path: '/plugins',
       name: 'plugins',
